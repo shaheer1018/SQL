@@ -16,9 +16,14 @@ INSERT INTO customers (customer_id, customer_name) VALUES (5, 'Charlie Davis');
 
 ### OUTPUT
 | customer_id | customer_name |
-| ----------- | ------------- |
+|: --------- :|: ----------- :|
 |     1       | John Doe      |
 |     2       | Jane Smith    |
 |     3       | Alice Johnson |
 |     4       | Bob Brown     |
 |     5       | Charlie Davis |
+
+
+```python
+print(hello)
+```
