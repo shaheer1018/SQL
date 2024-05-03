@@ -29,3 +29,18 @@ VALUES
 |   2  |    NULL      |   Smith     | smith@example.com | NULL         |
 |   3  |    Alice     |   Johnson   | alice@example.com | 987-654-3210 |
 
+
+Now let's say we want to select the customer's email, but if it is null we want to display their phone number instead. We can use the COALESCE function for this 
+
+```sql
+SELECT id,
+       first_name,
+       COALESCE(email, phone) AS contact_info
+FROM customers;
+```
+
+| id |   contact_info   |
+|:--:|:----------------:|
+| 1  | 123-456-7890     |
+| 2  | smith@example.com|
+| 3  | alice@example.com|
