@@ -34,13 +34,13 @@ Now let's say we want to select the customer's email, but if it is null we want 
 
 ```sql
 SELECT id,
-       first_name,
+       last_name,
        COALESCE(email, phone) AS contact_info
 FROM customers;
 ```
 
-| id |   contact_info   |
-|:--:|:----------------:|
-| 1  | 123-456-7890     |
-| 2  | smith@example.com|
-| 3  | alice@example.com|
+| id | last_name |   contact_info    |
+|:--:|:---------:|:-----------------:|
+| 1  |   Doe     |   123-456-7890    |
+| 2  |   Smith   | smith@example.com |
+| 3  |  Johnson  | alice@example.com |
