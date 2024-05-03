@@ -22,10 +22,9 @@ VALUES
 (2, NULL, 'Smith', 'smith@example.com', NULL),
 (3, 'Alice', 'Johnson', 'alice@example.com', '987-654-3210');
 ```
-
 +------+--------------+-------------+-------------------+--------------+
 |: id :|: first_name :|: last_name :|:      email      :|:   phone    :|
-+------+--------------+-------------+-------------------+--------------+
+------------------------------------------------------------------------
 |   1  |    John      |    Doe      | NULL              | 123-456-7890 |
 |   2  |    NULL      |   Smith     | smith@example.com | NULL         |
 |   3  |    Alice     |   Johnson   | alice@example.com | 987-654-3210 |
